@@ -27,6 +27,21 @@
 <link rel="stylesheet" type="text/css" href="css/template.css">
 <link rel="shortcut icon" type="image/x-icon" href="http://mixitup.io/demos/im/favicon.ico">
 <script type="text/javascript" src="js/jquery-v1.9.1.js"></script>
+<script src="js/routie.min.js"></script>
+<script>
+
+  routie({
+    '': function() {
+      alert('routie senses home!');
+    },
+    'item1a': function() {
+      alert('item1a selected');
+    },
+    'item1b': function() {
+      alert('item2a selected');
+    },
+  });
+</script>
 <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 <!--
 Special thanks to:
@@ -64,6 +79,7 @@ http://mixitup.io
 	/* ]]> */
 </script>
 <style type="text/css">
+	a { color: #f74c31;}
 	.cf-hidden { display: none; }
 	.cf-invisible { visibility: hidden; }
 </style>
@@ -73,43 +89,47 @@ http://mixitup.io
 			<h1><strong>alexjohnson.io</strong> portfolio</h1>
 
 			<p>Mission statement and personal summary goes here</p>
+			<div class="previews">
+				<!-- FILTER CONTROLS -->
+				<div class="controls">
+					<h3>Filter Controls</h3>
+					<ul>
+						<li class="filter active" data-filter="all">Show All</li>
+						<li class="filter" data-filter="category_1">Category 1</li>
+						<li class="filter" data-filter="category_2">Category 2</li>
+						<li class="filter" data-filter="category_3">Category 3</li>
+						<li class="filter" data-filter="category_3 category_1">Category 1 &amp; 3</li>
+					</ul>
+				</div>
 
-			<!-- FILTER CONTROLS -->
-			<div class="controls">
-				<h3>Filter Controls</h3>
-				<ul>
-					<li class="filter active" data-filter="all">Show All</li>
-					<li class="filter" data-filter="category_1">Category 1</li>
-					<li class="filter" data-filter="category_2">Category 2</li>
-					<li class="filter" data-filter="category_3">Category 3</li>
-					<li class="filter" data-filter="category_3 category_1">Category 1 &amp; 3</li>
+				<!-- SORT CONTROLS
+				<div class="controls">
+					<h3>Sort Controls</h3>
+					<ul>
+						<li class="sort active" data-sort="data-cat" data-order="desc">Descending</li>
+						<li class="sort" data-sort="data-cat" data-order="asc">Ascending</li>
+						<li class="sort" data-sort="default" data-order="desc">Default</li>
+					</ul>
+				</div>
+				 -->
+
+				<hr>
+
+				<!-- GRID -->
+				<ul style="" id="Grid">
+					  <li style="" class="mix category_1 mix_all" data-cat="1"><a href="#item1a">1</a></li>
+					  <li style="" class="mix category_1 mix_all" data-cat="1"><a href="#item1b">1</a></li>
+					  <li style="" class="mix category_2 mix_all" data-cat="2">2</li>
+					  <li style="" class="mix category_2 mix_all" data-cat="2">2</li>
+					  <li style="" class="mix category_3 mix_all" data-cat="3">3</li>
+					  <li style="" class="mix category_3 mix_all" data-cat="3">3</li>
+
+					<li class="gap"></li> <!-- "gap" elements fill in the gaps in justified grid -->
 				</ul>
 			</div>
-
-			<!-- SORT CONTROLS
-			<div class="controls">
-				<h3>Sort Controls</h3>
-				<ul>
-					<li class="sort active" data-sort="data-cat" data-order="desc">Descending</li>
-					<li class="sort" data-sort="data-cat" data-order="asc">Ascending</li>
-					<li class="sort" data-sort="default" data-order="desc">Default</li>
-				</ul>
+			<div class="content">
+				Content HERE!!!
 			</div>
-			 -->
-
-			<hr>
-
-			<!-- GRID -->
-			<ul style="" id="Grid">
-				  <li style="" class="mix category_1 mix_all" data-cat="1">1</li>
-				  <li style="" class="mix category_1 mix_all" data-cat="1">1</li>
-				  <li style="" class="mix category_2 mix_all" data-cat="2">2</li>
-				  <li style="" class="mix category_2 mix_all" data-cat="2">2</li>
-				  <li style="" class="mix category_3 mix_all" data-cat="3">3</li>
-				  <li style="" class="mix category_3 mix_all" data-cat="3">3</li>
-
-				<li class="gap"></li> <!-- "gap" elements fill in the gaps in justified grid -->
-			</ul>
 
 		</div>
 </body></html>
