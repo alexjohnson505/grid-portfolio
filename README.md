@@ -7,7 +7,7 @@ Special thanks to:
 
 ### [Mixitup](http://mixitup.io/)
 
-MixItUp is a light-weight but powerful jQuery plugin that provides beautiful animated filtering and sorting of categorized and ordered content. \
+MixItUp is a light-weight but powerful jQuery plugin that provides beautiful animated filtering and sorting of categorized and ordered content.
 
 [Mixitup on Github](https://github.com/barrel/mixitup)
 
